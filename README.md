@@ -128,7 +128,5 @@ This project uses the Local Binary Pattern Histogram (LBPH) face recognizer from
 
 ## 📧 Contact
 - Developer: Nishit Jain
-- Email: []
-- GitHub: 
 
 ---
