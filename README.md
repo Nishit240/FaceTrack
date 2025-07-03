@@ -43,10 +43,10 @@ source .venv/Scripts/activate  # On Windows
 
 ### 3. Install Dependencies
 
-pip install -r requirements.txt
+``pip install -r requirements.txt`` 
 
 ### If requirements.txt doesn't exist, manually install:
-pip install opencv-python opencv-contrib-python pillow numpy tk
+``pip install opencv-python opencv-contrib-python pillow numpy tk``
 
 ---
 
@@ -72,7 +72,7 @@ face-recognition-attendance-system/ <br />
 
 #### Train the Model:
 
-- Use train.py to process and train the data using LBPH algorithm.
+- Use ``train.py`` to process and train the data using LBPH algorithm.
 
 #### Face Recognition:
 
@@ -80,27 +80,27 @@ face-recognition-attendance-system/ <br />
 
 #### Attendance Logs:
 
-- Attendance is saved in attendance.csv with student ID, name, date, and time.
+- Attendance is saved in ``attendance.csv`` with student ID, name, date, and time.
 
 ---
 
 ## 🧠 LBPH Algorithm
-This project uses the Local Binary Pattern Histogram (LBPH) face recognizer from opencv-contrib. It's fast, lightweight, and works well for real-time face recognition on small datasets.
+This project uses the Local Binary Pattern Histogram (LBPH) face recognizer from ``opencv-contrib``. It's fast, lightweight, and works well for real-time face recognition on small datasets.
 
 ---
 
 ## 📦 Requirements
-- All required libraries are listed in requirements.txt, but core ones include:
+- All required libraries are listed in ``requirements.txt``, but core ones include:
 
-- opencv-python
+- ``opencv-python``
 
-- Pillow
+- ``Pillow``
 
-- tkinter
+- ``tkinter``
 
-- numpy
+- ``numpy``
 
-- tkcalendar (if used for student entry forms)
+- ``tkcalendar`` (if used for student entry forms)
 
 ---
 
