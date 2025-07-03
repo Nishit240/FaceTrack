@@ -51,9 +51,9 @@ pip install opencv-python opencv-contrib-python pillow numpy tk
 ---
 
 ### 4. Project Folder Structure
-
-- face-recognition-attendance-system/ 
-- ├── data/                      .# Folder to store face images for training
+<pre>
+face-recognition-attendance-system/ <br />
+├── data/                      .# Folder to store face images for training<br />
 ├── image/                     # UI background images<br />
 ├── attendance.csv             # Output attendance log<br />
 ├── classifier.xml             # Trained model (generated after training)<br />
@@ -62,7 +62,7 @@ pip install opencv-python opencv-contrib-python pillow numpy tk
 ├── face_recognition.py        # Recognize and mark attendance<br />
 ├── student.py                 # Register students and collect data<br />
 ├── README.md
-
+</pre>pre>
 ---
 
 ### ✅ How It Works
