@@ -52,35 +52,35 @@ pip install opencv-python opencv-contrib-python pillow numpy tk
 
 ### 4. Project Folder Structure
 
-face-recognition-attendance-system/
-├── data/                      # Folder to store face images for training
-├── image/                     # UI background images
-├── attendance.csv             # Output attendance log
-├── classifier.xml             # Trained model (generated after training)
-├── main.py                    # Main app launcher
-├── train.py                   # Train the model
-├── face_recognition.py        # Recognize and mark attendance
-├── student.py                 # Register students and collect data
-├── README.md    
+- face-recognition-attendance-system/
+- ├── data/                      # Folder to store face images for training
+- ├── image/                     # UI background images
+- ├── attendance.csv             # Output attendance log
+- ├── classifier.xml             # Trained model (generated after training)
+- ├── main.py                    # Main app launcher
+- ├── train.py                   # Train the model
+- ├── face_recognition.py        # Recognize and mark attendance
+- ├── student.py                 # Register students and collect data
+- ├── README.md    
 
 ---
 
 ### ✅ How It Works
 Capture Faces:
 
-Add student and capture multiple face images via webcam.
+- Add student and capture multiple face images via webcam.
 
 Train the Model:
 
-Use train.py to process and train the data using LBPH algorithm.
+- Use train.py to process and train the data using LBPH algorithm.
 
 Face Recognition:
 
-Launch face recognition, match faces, and auto-log attendance.
+- Launch face recognition, match faces, and auto-log attendance.
 
 Attendance Logs:
 
-Attendance is saved in attendance.csv with student ID, name, date, and time.
+- Attendance is saved in attendance.csv with student ID, name, date, and time.
 
 ---
 
@@ -90,45 +90,45 @@ This project uses the Local Binary Pattern Histogram (LBPH) face recognizer from
 ---
 
 ### 📦 Requirements
-All required libraries are listed in requirements.txt, but core ones include:
+- All required libraries are listed in requirements.txt, but core ones include:
 
-opencv-python
+- opencv-python
 
-Pillow
+- Pillow
 
-tkinter
+- tkinter
 
-numpy
+- numpy
 
-tkcalendar (if used for student entry forms)
+- tkcalendar (if used for student entry forms)
 
 ---
 
 ### 🎯 Objectives
-Reduce human error in attendance marking
+- Reduce human error in attendance marking
 
-Save time with a fully automated system
+- Save time with a fully automated system
 
-Ensure a hygienic, touchless method post-COVID
+- Ensure a hygienic, touchless method post-COVID
 
-Make the system low-cost and scalable
+- Make the system low-cost and scalable
 
 ---
 
 ### 🛡️ Future Improvements
-Database integration (MySQL or SQLite)
+- Database integration (MySQL or SQLite)
 
-Admin login system
+- Admin login system
 
-Email/SMS alerts on attendance
+- Email/SMS alerts on attendance
 
-Detailed analytics dashboard
+- Detailed analytics dashboard
 
 ---
 
 ### 📧 Contact
-Developer: Nishit Jain
-Email: [your-email@example.com]
-GitHub: https://github.com/yourusername
+- Developer: Nishit Jain
+- Email: [your-email@example.com]
+- GitHub: https://github.com/yourusername
 
 ---
