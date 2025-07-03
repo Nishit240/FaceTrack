@@ -36,7 +36,7 @@ git clone https://github.com/yourusername/face-recognition-attendance-system.git
 cd face-recognition-attendance-system
 
 ### 2. Create a Virtual Environment (Optional but Recommended)
-python -m venv .venv
+python -m venv .venv <br />
 source .venv/Scripts/activate  # On Windows
 
 ---
@@ -52,16 +52,16 @@ pip install opencv-python opencv-contrib-python pillow numpy tk
 
 ### 4. Project Folder Structure
 
-- face-recognition-attendance-system/
-- ├── data/                      # Folder to store face images for training
-- ├── image/                     # UI background images
-- ├── attendance.csv             # Output attendance log
-- ├── classifier.xml             # Trained model (generated after training)
-- ├── main.py                    # Main app launcher
-- ├── train.py                   # Train the model
-- ├── face_recognition.py        # Recognize and mark attendance
-- ├── student.py                 # Register students and collect data
-- ├── README.md    
+face-recognition-attendance-system/ <br />
+├── data/                      # Folder to store face images for training <br />
+├── image/                     # UI background images<br />
+├── attendance.csv             # Output attendance log<br />
+├── classifier.xml             # Trained model (generated after training)<br />
+├── main.py                    # Main app launcher<br />
+├── train.py                   # Train the model<br />
+├── face_recognition.py        # Recognize and mark attendance<br />
+├── student.py                 # Register students and collect data<br />
+├── README.md
 
 ---
 
