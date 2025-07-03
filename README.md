@@ -59,3 +59,61 @@ face-recognition-attendance-system/
 ├── face_recognition.py        # Recognize and mark attendance
 ├── student.py                 # Register students and collect data
 ├── README.md    
+
+
+### ✅ How It Works
+Capture Faces:
+
+Add student and capture multiple face images via webcam.
+
+Train the Model:
+
+Use train.py to process and train the data using LBPH algorithm.
+
+Face Recognition:
+
+Launch face recognition, match faces, and auto-log attendance.
+
+Attendance Logs:
+
+Attendance is saved in attendance.csv with student ID, name, date, and time.
+
+### 🧠 LBPH Algorithm
+This project uses the Local Binary Pattern Histogram (LBPH) face recognizer from opencv-contrib. It's fast, lightweight, and works well for real-time face recognition on small datasets.
+
+### 📦 Requirements
+All required libraries are listed in requirements.txt, but core ones include:
+
+opencv-python
+
+Pillow
+
+tkinter
+
+numpy
+
+tkcalendar (if used for student entry forms)
+
+
+### 🎯 Objectives
+Reduce human error in attendance marking
+
+Save time with a fully automated system
+
+Ensure a hygienic, touchless method post-COVID
+
+Make the system low-cost and scalable
+
+### 🛡️ Future Improvements
+Database integration (MySQL or SQLite)
+
+Admin login system
+
+Email/SMS alerts on attendance
+
+Detailed analytics dashboard
+
+### 📧 Contact
+Developer: Nishit Jain
+Email: [your-email@example.com]
+GitHub: https://github.com/yourusername
