@@ -39,6 +39,7 @@ cd face-recognition-attendance-system
 python -m venv .venv
 source .venv/Scripts/activate  # On Windows
 
+---
 
 ### 3. Install Dependencies
 
@@ -46,6 +47,8 @@ pip install -r requirements.txt
 
 ### If requirements.txt doesn't exist, manually install:
 pip install opencv-python opencv-contrib-python pillow numpy tk
+
+---
 
 ### 4. Project Folder Structure
 
@@ -60,6 +63,7 @@ face-recognition-attendance-system/
 ├── student.py                 # Register students and collect data
 ├── README.md    
 
+---
 
 ### ✅ How It Works
 Capture Faces:
@@ -78,8 +82,12 @@ Attendance Logs:
 
 Attendance is saved in attendance.csv with student ID, name, date, and time.
 
+---
+
 ### 🧠 LBPH Algorithm
 This project uses the Local Binary Pattern Histogram (LBPH) face recognizer from opencv-contrib. It's fast, lightweight, and works well for real-time face recognition on small datasets.
+
+---
 
 ### 📦 Requirements
 All required libraries are listed in requirements.txt, but core ones include:
@@ -94,6 +102,7 @@ numpy
 
 tkcalendar (if used for student entry forms)
 
+---
 
 ### 🎯 Objectives
 Reduce human error in attendance marking
@@ -104,6 +113,8 @@ Ensure a hygienic, touchless method post-COVID
 
 Make the system low-cost and scalable
 
+---
+
 ### 🛡️ Future Improvements
 Database integration (MySQL or SQLite)
 
@@ -113,7 +124,11 @@ Email/SMS alerts on attendance
 
 Detailed analytics dashboard
 
+---
+
 ### 📧 Contact
 Developer: Nishit Jain
 Email: [your-email@example.com]
 GitHub: https://github.com/yourusername
+
+---
