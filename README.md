@@ -33,7 +33,7 @@ An AI-powered attendance system that uses real-time face detection and recogniti
 ### 1. Clone the Repository
 
 git clone https://github.com/yourusername/face-recognition-attendance-system.git
-cd face-recognition-attendance-system
+< br / > cd face-recognition-attendance-system
 
 ### 2. Create a Virtual Environment (Optional but Recommended)
 python -m venv .venv
