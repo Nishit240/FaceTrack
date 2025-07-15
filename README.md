@@ -22,42 +22,42 @@ An AI-powered attendance system that uses real-time face detection and recogniti
 - Below are screenshots from each key module of the system:
 
 ### 🏠 1. Main Window (Dashboard)
-Home screen with navigation to all functionalities
+Home screen with navigation to all functionalities <br />
 <br />
 <img width="1919" height="1052" alt="image" src="https://github.com/user-attachments/assets/86a59653-beda-49f3-a11a-1cfad36e9938" />
 
 ---
 
 ### 👨‍🎓 2. Student Registration Page
-Form to register student details and capture face images
+Form to register student details and capture face images <br />
 <br />
 <img width="1919" height="1050" alt="image" src="https://github.com/user-attachments/assets/c108ad7e-7005-469a-9e41-516b8e3f1cd7" />
 
 ---
 
 ### 👁️ 3. Face Recognition Page
-Live webcam feed that detects, recognizes faces, and marks attendance
+Live webcam feed that detects, recognizes faces, and marks attendance <br />
 <br />
 <img width="1919" height="1054" alt="image" src="https://github.com/user-attachments/assets/ae492fad-e9f3-47a8-8c65-5b05eef4039c" />
 
 ---
 
 ### 📅 4. Attendance Records Page
-Displays attendance saved in attendance.csv with timestamp
+Displays attendance saved in attendance.csv with timestamp <br />
 <br />
 <img width="1919" height="1050" alt="image" src="https://github.com/user-attachments/assets/dacf88fe-030d-4b8d-8977-7e0a5e464a89" />
 
 ---
 
 ### 🧠 5. Face Training Page
-Trains the LBPH model using captured face images
+Trains the LBPH model using captured face images <br />
 <br />
 <img width="1878" height="963" alt="image" src="https://github.com/user-attachments/assets/04ed9cd4-45de-43f3-bf23-18e75811e56e" />
 
 ---
 
 ### 📄 About Page
-Its core purpose is to minimize manual work
+Its core purpose is to minimize manual work <br />
 <br />
 <img width="1919" height="1046" alt="image" src="https://github.com/user-attachments/assets/effaf794-8ae9-410f-82fb-f8fcf75b40b2" />
 
