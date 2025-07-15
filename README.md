@@ -18,6 +18,14 @@ An AI-powered attendance system that uses real-time face detection and recogniti
 
 ---
 
+## 🖼️ Screenshots
+- Below are screenshots from each key module of the system:
+
+###🏠 1. Main Window (Dashboard)
+Home screen with navigation to all functionalities
+<img width="1919" height="1052" alt="image" src="https://github.com/user-attachments/assets/86a59653-beda-49f3-a11a-1cfad36e9938" />
+
+
 ## 🛠️ Tech Stack
 
 - **Frontend/UI**: Tkinter (Python GUI)
