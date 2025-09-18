@@ -166,7 +166,6 @@ This project uses the Local Binary Pattern Histogram (LBPH) face recognizer from
 ---
 
 ## 🛡️ Future Improvements
-- Database integration (MySQL or SQLite)
 
 - Admin login system
 
