@@ -103,7 +103,7 @@ source .venv/Scripts/activate  # On Windows
 ### 4. Project Folder Structure
 <pre>
 face-recognition-attendance-system/ <br />
-├── data/                      .# Folder to store face images for training<br />
+├── data/                      # Folder to store face images for training<br />
 ├── image/                     # UI background images<br />
 ├── attendance.csv             # Output attendance log<br />
 ├── classifier.xml             # Trained model (generated after training)<br />
