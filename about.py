@@ -13,6 +13,7 @@ class AboutPage:
         self.session_attendance_set = set()
 
         # ========== HEADER (Navbar Style) ==========
+
         header = Frame(self.root, bg="#121416", height=60)
         header.place(x=0, y=0, width=1550, height=60)
 
@@ -22,7 +23,7 @@ class AboutPage:
         menu_font = ("Helvetica", 11)
         Button(header, text="Home", font=menu_font, fg="white", bg="#121416", bd=0,
             command=self.home).place(x=1240, y=18)
-        Button(header, text="About", font=menu_font, fg="white", bg="#121416", bd=0).place(x=1310, y=18)
+        Button(header, text="About", font=menu_font, fg="white", bg="#121416", bd=0, command=self.about).place(x=1310, y=18)
         Button(header, text="Help", font=menu_font, fg="white", bg="#121416", bd=0, command=self.help_desk1).place(x=1380, y=18)
         profile_icon = Label(header, text="👤", font=("Arial", 14), fg="white", bg="#121416")
         profile_icon.place(x=1450, y=16)
@@ -37,8 +38,7 @@ class AboutPage:
         # -------- Purpose Section --------
         Label(content, text="Purpose", font=("Helvetica", 16, "bold"), bg="#0f0f0f", fg="white").pack(anchor=W)
         Label(content, text="FaceTrack is a smart attendance management system that leverages real-time facial recognition"
-                            "to automate the process of marking and tracking student attendance. It provides institutions\n"
-                            "with an efficient, secure, and user-friendly solution to eliminate manual errors and save time.",
+                            "to automate the process of marking and tracking student attendance.\n" "It provides institutions with an efficient, secure, and user-friendly solution to eliminate manual errors and save time.",
               font=("Helvetica", 13), bg="#0f0f0f", fg="#FFFFFF", justify=LEFT).pack(anchor=W, pady=5)
 
         # -------- Features Section --------
@@ -58,10 +58,8 @@ class AboutPage:
             Label(content, text=text, font=("Helvetica", 11), bg="#0f0f0f", fg="#FFFFFF").pack(anchor=W, padx=30)
 
         # -------- Development Team --------
-        Label(content, text="\nDevelopment Team", font=("Helvetica", 16, "bold"), bg="#0f0f0f", fg="white").pack(anchor=W)
-        Label(content, text="This system was designed and developed as part of a college-level project to demonstrate practical"
-                            "application of Python, Tkinter, OpenCV, and CSV data handling. Special thanks to all contributors\n"
-                            "and mentors who guided its completion with valuable feedback and insights.",
+        Label(content, text="\nDeveloped By", font=("Helvetica", 16, "bold"), bg="#0f0f0f", fg="white").pack(anchor=W)
+        Label(content, text="This system, designed and developed by Nishit Jain, serves as a practical demonstration of Python's core concepts, coupled with real-world applications of Tkinter,\n" "OpenCV, and efficient CSV data handling.",
               font=("Helvetica", 13), bg="#0f0f0f", fg="#FFFFFF", justify=LEFT).pack(anchor=W, pady=5)
 
         # -------- Legal Section --------
@@ -71,13 +69,21 @@ class AboutPage:
                             "transmit or store any data externally.",
               font=("Helvetica", 13), bg="#0f0f0f", fg="#FFFFFF", justify=LEFT).pack(anchor=W, pady=5)
 
+   
+   
+# header function
+
     def home(self):
         self.root.destroy()
-        os.system("main.py")
-    
+        os.system("main.py") 
+
     def help_desk1(self):
         self.root.destroy()
         os.system("help_desk.py")
+        
+    def about(self):
+        self.root.destroy()
+        os.system("about.py")
 
 
 if __name__ == "__main__":

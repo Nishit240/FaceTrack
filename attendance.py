@@ -18,6 +18,7 @@ class Attendance:
         self.mydata = []
 
         # ========== HEADER (Navbar Style) ==========
+
         header = Frame(self.root, bg="#121416", height=60)
         header.place(x=0, y=0, width=1550, height=60)
 
@@ -25,12 +26,10 @@ class Attendance:
         logo_lbl.place(x=30, y=15)
 
         menu_font = ("Helvetica", 11)
-
-        Button(header, text="Home", font=menu_font, fg="white", bg="#121416", bd=0, command=self.home).place(x=1090, y=18)
-        Button(header, text="Student Detail", font=menu_font, fg="white", bg="#121416", bd=0, command=self.student_details).place(x=1150, y=18)
-        Button(header, text="Attendance", font=menu_font, fg="white", bg="#121416", bd=0).place(x=1260, y=18)
-        Button(header, text="Face Recog", font=menu_font, fg="white", bg="#121416", bd=0, command=self.face_recog).place(x=1350, y=18)
-
+        Button(header, text="Home", font=menu_font, fg="white", bg="#121416", bd=0,
+            command=self.home).place(x=1240, y=18)
+        Button(header, text="About", font=menu_font, fg="white", bg="#121416", bd=0, command=self.about).place(x=1310, y=18)
+        Button(header, text="Help", font=menu_font, fg="white", bg="#121416", bd=0, command=self.help_desk1).place(x=1380, y=18)
         profile_icon = Label(header, text="👤", font=("Arial", 14), fg="white", bg="#121416")
         profile_icon.place(x=1450, y=16)
 
@@ -287,18 +286,20 @@ class Attendance:
         self.var_atten_attendance.set("")
 
 
-#================header function =============
+# header function
+
     def home(self):
         self.root.destroy()
-        os.system("main.py")
+        os.system("main.py") 
 
-    def student_details(self):
+    def help_desk1(self):
         self.root.destroy()
-        os.system("student.py")
+        os.system("help_desk.py")
+        
+    def about(self):
+        self.root.destroy()
+        os.system("about.py")
 
-    def face_recog(self):
-        self.root.destroy()
-        os.system("face_recognition.py")
 
 if __name__ == "__main__":
     root = Tk()
