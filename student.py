@@ -45,27 +45,19 @@ class Student:
         Label(self.root, text="Student Detail", font=("Helvetica", 26, "bold"), bg="#0f0f0f", fg="white").place(x=50, y=4)
 
 
-        #==========header============
+        # ========== HEADER (Navbar Style) ==========
+
         header = Frame(self.root, bg="#121416", height=60)
         header.place(x=0, y=0, width=1550, height=60)
 
-        logo_lbl = Label(header, text="Student Detail", font=("Helvetica", 26, "bold"), fg="white", bg="#121416")
-        logo_lbl.place(x=50, y=10)
+        logo_lbl = Label(header, text="FaceTrack", font=("Helvetica", 16, "bold"), fg="white", bg="#121416")
+        logo_lbl.place(x=30, y=15)
 
         menu_font = ("Helvetica", 11)
-
         Button(header, text="Home", font=menu_font, fg="white", bg="#121416", bd=0,
-            command=self.home).place(x=1090, y=18)
-
-        Button(header, text="Face Recog", font=menu_font, fg="white", bg="#121416", bd=0,
-            command=self.face_recognition).place(x=1155, y=18)
-
-        Button(header, text="Attendance", font=menu_font, fg="white", bg="#121416", bd=0,
-            command=self.attendance_data).place(x=1260, y=18)
-
-        Button(header, text="Train Data", font=menu_font, fg="white", bg="#121416", bd=0,
-            command=self.train_data).place(x=1350, y=18)
-
+            command=self.home).place(x=1240, y=18)
+        Button(header, text="About", font=menu_font, fg="white", bg="#121416", bd=0, command=self.about).place(x=1310, y=18)
+        Button(header, text="Help", font=menu_font, fg="white", bg="#121416", bd=0, command=self.help_desk1).place(x=1380, y=18)
         profile_icon = Label(header, text="👤", font=("Arial", 14), fg="white", bg="#121416")
         profile_icon.place(x=1450, y=16)
 
@@ -693,21 +685,19 @@ class Student:
                 messagebox.showerror("Database Error", f"Error: {str(es)}", parent=self.root)
 
 
-    def attendance_data(self):
-        self.root.destroy()
-        os.system("attendance.py")
-
-    def train_data(self):
-        self.root.destroy()
-        os.system("train.py")
-
-    def face_recognition(self):
-        self.root.destroy()
-        os.system("face_recognition.py")
+# header function
 
     def home(self):
         self.root.destroy()
         os.system("main.py") 
+
+    def help_desk1(self):
+        self.root.destroy()
+        os.system("help_desk.py")
+        
+    def about(self):
+        self.root.destroy()
+        os.system("about.py") 
                 
 
 if __name__ == "__main__":

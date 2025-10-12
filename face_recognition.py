@@ -16,9 +16,10 @@ class Face_Recognition:
         self.root.configure(bg="#0f0f0f")  # dark background
 
         self.session_attendance_set = set()
-
+        self.video_cap = None  # camera variable
 
         # ========== HEADER (Navbar Style) ==========
+
         header = Frame(self.root, bg="#121416", height=60)
         header.place(x=0, y=0, width=1550, height=60)
 
@@ -26,19 +27,10 @@ class Face_Recognition:
         logo_lbl.place(x=30, y=15)
 
         menu_font = ("Helvetica", 11)
-
         Button(header, text="Home", font=menu_font, fg="white", bg="#121416", bd=0,
-            command=self.home).place(x=1090, y=18)
-
-        Button(header, text="Student Detail", font=menu_font, fg="white", bg="#121416", bd=0,
-            command=self.student_details).place(x=1150, y=18)
-
-        Button(header, text="Attendance", font=menu_font, fg="white", bg="#121416", bd=0,
-            command=self.attendance_data).place(x=1260, y=18)
-
-        Button(header, text="Train Data", font=menu_font, fg="white", bg="#121416", bd=0,
-            command=self.train_data).place(x=1350, y=18)
-
+            command=self.home).place(x=1240, y=18)
+        Button(header, text="About", font=menu_font, fg="white", bg="#121416", bd=0, command=self.about).place(x=1310, y=18)
+        Button(header, text="Help", font=menu_font, fg="white", bg="#121416", bd=0, command=self.help_desk1).place(x=1380, y=18)
         profile_icon = Label(header, text="👤", font=("Arial", 14), fg="white", bg="#121416")
         profile_icon.place(x=1450, y=16)
 
@@ -102,6 +94,12 @@ class Face_Recognition:
             messagebox.showinfo("Attendance", f"✅ Attendance marked for {n} ({r})")
 
     def face_recog(self):
+            # Stop camera if already running
+        if self.video_cap and self.video_cap.isOpened():
+            self.video_cap.release()
+            self.cam_label.config(image='', text="🔄 Restarting camera...", fg="white", bg="black")
+            self.root.unbind("<Return>")
+
         def draw_boundary(img, classifier, scaleFactor, minNeighbors, color, text, clf):
             gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
             features = classifier.detectMultiScale(gray, scaleFactor, minNeighbors)
@@ -133,12 +131,15 @@ class Face_Recognition:
         faceCascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
         clf = cv2.face.LBPHFaceRecognizer_create()
         clf.read("classifier.xml")
+        
+        self.video_cap = cv2.VideoCapture(0)
+        self.root.bind("<Return>", self.stop_camera)  # Enter key
 
         def update_frame():
-            ret, frame = video_cap.read()
-            if not ret:
-                messagebox.showerror("Camera Error", "Unable to read from camera.")
-                return
+            ret, frame = self.video_cap.read() 
+            # if not ret:
+            #     messagebox.showerror("Camera Error", "Unable to read from camera.")
+            #     return
             if ret:
                 frame = recognize(frame, clf, faceCascade)
                 rgb_img = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
@@ -148,26 +149,37 @@ class Face_Recognition:
                 self.cam_label.configure(image=imgtk)
             self.cam_label.after(10, update_frame)
 
-        video_cap = cv2.VideoCapture(0)
         update_frame()
 
+    def stop_camera(self, event=None):
+        if self.video_cap and self.video_cap.isOpened():
+            self.video_cap.release()
+            self.cam_label.config(image='')  # Clear image
+            self.root.unbind("<Return>")
+            messagebox.showinfo("Camera", "📷 Camera stopped.")
 
 
-    def student_details(self):
-        self.root.destroy()
-        os.system("student.py")
 
-    def attendance_data(self):
-        self.root.destroy()
-        os.system("attendance.py")
-
-    def train_data(self):
-        self.root.destroy()
-        os.system("train.py")
+# header function
 
     def home(self):
+        if self.video_cap and self.video_cap.isOpened():
+            self.video_cap.release()
         self.root.destroy()
         os.system("main.py") 
+
+    def help_desk1(self):
+        if self.video_cap and self.video_cap.isOpened():
+            self.video_cap.release()
+        self.root.destroy()
+        os.system("help_desk.py")
+
+    def about(self):
+        if self.video_cap and self.video_cap.isOpened():
+            self.video_cap.release()
+        self.root.destroy()
+        os.system("about.py")
+
 
 
 

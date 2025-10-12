@@ -3,3 +3,4 @@ opencv-contrib-python
 Pillow
 numpy
 tkcalendar
+mysql-connector-python

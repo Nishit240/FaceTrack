@@ -11,7 +11,8 @@ class HelpDesk:
         self.root.title("FaceTrack")
         self.root.configure(bg="#0f0f0f")
 
-        # ========== HEADER ==========
+        # ========== HEADER (Navbar Style) ==========
+
         header = Frame(self.root, bg="#121416", height=60)
         header.place(x=0, y=0, width=1550, height=60)
 
@@ -22,7 +23,7 @@ class HelpDesk:
         Button(header, text="Home", font=menu_font, fg="white", bg="#121416", bd=0,
             command=self.home).place(x=1240, y=18)
         Button(header, text="About", font=menu_font, fg="white", bg="#121416", bd=0, command=self.about).place(x=1310, y=18)
-        Button(header, text="Help", font=menu_font, fg="white", bg="#121416", bd=0).place(x=1380, y=18)
+        Button(header, text="Help", font=menu_font, fg="white", bg="#121416", bd=0, command=self.help_desk1).place(x=1380, y=18)
         profile_icon = Label(header, text="👤", font=("Arial", 14), fg="white", bg="#121416")
         profile_icon.place(x=1450, y=16)
 
@@ -105,10 +106,16 @@ class HelpDesk:
 
     
     
+# header function
+
     def home(self):
         self.root.destroy()
-        os.system("main.py")
+        os.system("main.py") 
 
+    def help_desk1(self):
+        self.root.destroy()
+        os.system("help_desk.py")
+        
     def about(self):
         self.root.destroy()
         os.system("about.py")

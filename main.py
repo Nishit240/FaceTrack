@@ -2,9 +2,6 @@ from tkinter import *
 from PIL import Image, ImageTk
 import tkinter
 from student import Student
-from train import Train
-from face_recognition import Face_Recognition
-from attendance import Attendance
 import os
 
 class FaceRecognitionSystem:
