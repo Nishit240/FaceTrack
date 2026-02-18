@@ -73,7 +73,8 @@ Its core purpose is to minimize manual work <br />
 - **Frontend/UI**: Tkinter (Python GUI)
 - **Image Processing**: OpenCV, PIL (Pillow)
 - **Machine Learning Model**: OpenCV's LBPH Face Recognizer
-- **Data Storage**: CSV (for attendance logs)
+- **Data Storage**: Mysql (for attendance logs)
+- **Data Export**: CSV
 - **Language**: Python
 
 ---
