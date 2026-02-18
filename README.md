@@ -11,7 +11,7 @@ An AI-powered attendance system that uses real-time face detection and recogniti
 - 🧠 Face recognition using LBPH algorithm
 - 📂 Image dataset collection with webcam
 - 🏷️ Automatic attendance marking with date & time
-- 💾 Attendance logging in CSV file
+- 💾 Attendance logging in Mysql
 - 🖥️ Graphical User Interface with Tkinter
 - 📸 Face training module
 - 👨‍💻 Easy to use and extend
