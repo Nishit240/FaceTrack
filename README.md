@@ -1,4 +1,4 @@
-# FaceTrack
+<h1 align="center"> FaceTrack </h1>
 # 🎯 Face Recognition-Based Attendance System (FaceTrack)
 
 An AI-powered attendance system that uses real-time face detection and recognition to automatically mark and record attendance. Built using Python, OpenCV, and Tkinter.
